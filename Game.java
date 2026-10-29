@@ -70,11 +70,9 @@ public class Game {
 		Player player = new Player("petar   petrovic", 10, 5, 32, 32, 85);
         Game game = new Game(player);
 
-        // Prvi neprijatelj - rucno kreiranje
         MeleeEnemy e1 = new MeleeEnemy("Orc", 100, 100, 16, 16, 15, 60);
         game.addEnemy(e1);
 
-        // Drugi neprijatelj - kreiranje iz stringa
         String podaci = "Goblin;12,5;16x16;20;boss";
 
         int p1 = podaci.indexOf(';');
